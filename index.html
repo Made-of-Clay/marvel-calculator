@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Marvel Result Sheet</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="background bg_wht">
+    <div class="background bg_grn"></div>
+    <div class="background bg_ylw"></div>
+    <div class="background bg_red"></div>
+
+    <article id="container">
+        <h1>Marvel Result Calculator v2.0</h1>
+        <ol id="power_ranks"></ol>
+        <span class="pr_toggle">Power Ranks</span>
+        <!-- <div id="display_result">0</div> -->
+        <div id="calculator">
+            <div id="theResults">
+                <div class="display">0</div>
+                <span class="pr_abbv">S0</span><!-- spans are side-by-side -->
+                <span class="pr_mid">0</span><!-- use pseudos for () -->
+            </div>
+
+            <div id="buttons">
+                <a class="btn num">1</a>
+                <a class="btn num">2</a>
+                <a class="btn num">3</a>
+                <a class="btn num">4</a>
+                <a class="btn num">5</a>
+                <a class="btn num">6</a>
+                <a class="btn num">7</a>
+                <a class="btn num">8</a>
+                <a class="btn num">9</a>
+                <a class="btn" id="backspace">&laquo;</a>
+                <a class="btn num">0</a>
+                <a class="btn" id="clear">C</a>
+            </div><!-- End #buttons -->
+        </div>
+    </article><!-- End #container -->
+
+    <a class="ver1" href="version_1.0.php">Go to v1.0</a>
+
+    <script src="js/jquery.1.9.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

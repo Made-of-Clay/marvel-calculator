@@ -1,0 +1,34 @@
+// Layout
+#container {
+    padding: 0.1px;
+    position: relative;
+    transform: translateX(0);
+    transition: transform 0.3s;
+    z-index: 10;
+    
+    &.show {
+        transform: translateX(180px);
+    }
+
+    h1 {
+        color: rgba(black,0.75);
+        text-align: center;
+        text-shadow: -1px -1px 0 rgba(white,0.35);
+    }
+
+    @media screen and (min-width: 850px) {
+        transform: translateX(0);
+    }
+}
+
+.ver1 {
+    border-bottom: 1px dashed;
+    color: #333;
+    display: block;
+    margin: 2em auto 0;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    width: 6em;
+    z-index: 10;
+}

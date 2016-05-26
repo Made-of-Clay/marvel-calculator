@@ -1,0 +1,21 @@
+*::selection {
+    background: transparent;
+}
+*::-moz-selection {
+    background: transparent;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    font: $font-size $font-family;
+}
+
+h1 { font-size: $size-h1; }
+h2 { font-size: $size-h2; }
+h3 { font-size: $size-h3; }
+h4 { font-size: $size-h4; }
