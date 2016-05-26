@@ -6,7 +6,7 @@
     <title>Marvel Result Sheet</title>
 
     <link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body class="background bg_wht">
@@ -45,7 +45,20 @@
 
     <a class="ver1" href="version_1.0.php">Go to v1.0</a>
 
-    <script src="js/jquery.1.9.1.min.js"></script>
-    <script src="js/script.js"></script>
+    <div id="app-wrapper" ng-app="marvel">
+        <nav off-canvas toggleClass="testy-toggle" toggleText="Power Ranks">offcanvas component</nav>
+
+        <marvel-calc>marvel calculator</marvel-calc>
+    </div>
+
+    <script src="bower_components/angular/angular.min.js"></script>
+
+    <script src="app/app.js"></script>
+    <script src="app/components/off-canvas/off-canvas.controller.js"></script>
+    <script src="app/components/off-canvas/off-canvas.directive.js"></script>
+
+    <!-- Old Scripts -->
+    <script src="assets/js/jquery.1.9.1.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
