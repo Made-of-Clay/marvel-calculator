@@ -4,7 +4,7 @@
     position: relative;
     transform: translateX(0);
     transition: transform 0.3s;
-    z-index: 10;
+    // z-index: 10;
     
     &.show {
         transform: translateX(180px);
@@ -30,5 +30,14 @@
     text-align: center;
     text-decoration: none;
     width: 6em;
+    // z-index: 10;
+}
+
+*:not(.background) {
+    z-index: 1;
+}
+// hack
+#app-wrapper{
+    position: relative;
     z-index: 10;
 }
