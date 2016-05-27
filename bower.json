@@ -1,0 +1,20 @@
+{
+  "name": "marvel",
+  "homepage": "https://github.com/Made-of-Clay/marvel-calculator",
+  "authors": [
+    "Made-of-Clay <adam.m.leis@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.5.5"
+  }
+}
