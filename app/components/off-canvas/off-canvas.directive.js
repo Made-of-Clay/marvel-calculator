@@ -4,7 +4,8 @@
         .directive('offCanvas', offCanvas)
     ;
 
-    function offCanvas() {
+    offCanvas.$inject = ['_'];
+    function offCanvas(_) {
         var curDir = 'app/components/off-canvas';
         var directive = {
             templateUrl: curDir + '/off-canvas.html',
@@ -12,16 +13,24 @@
             controller: 'OffCanvasController',
             controllerAs: 'vm',
             bindToController: true,
-            scope: {},
+            scope: {
+                // list: {
+                //     class: '@listClass'
+                // },
+                // toggle: {
+                //     class: '@toggleClass',
+                //     text: '@toggleText'
+                // }
+                listClass: '@',
+                toggleClass: '@',
+                toggleText: '@'
+            },
             link: link
         };
 
         return directive;
 
         function link(scope, elem, atts) {
-            // console.log('working on link() - offCanvas in progress');
-            // console.log('scope, elem, atts',scope, elem, atts);
-            // check for atts to customize template, otherwise let controller set defaults
             if(isString(atts.listClass)) {
                 scope.vm.list.class = atts.listClass;
             }
@@ -30,8 +39,11 @@
             }
             if(isString(atts.toggleClass)) {
                 scope.vm.toggle.class = atts.toggleClass;
-                // elem.children().forEach()
             }
+            _.forEach(elem.children(), function findToggle(el, inx) {
+                scope.vm.handleList(angular.element(el), atts);
+                scope.vm.handleToggle(angular.element(el), atts);
+            });
         }
         function isString(val) {
             return typeof val === 'string';
