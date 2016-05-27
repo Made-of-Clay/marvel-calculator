@@ -1,0 +1,164 @@
+[
+    {
+        "name"  : "Shift 0",
+        "abbv"  : "S0",
+        "white" : [1, 65],
+        "green" : [66, 94],
+        "yellow": [95, 99],
+        "red"   : 100,
+        "mid"   : 0
+    },
+    {
+        "name"  : "Feeble",
+        "abbv"  : "Fe",
+        "white" : [1, 60],
+        "green" : [61, 90],
+        "yellow": [91, 99],
+        "red"   : 100,
+        "mid"   : 2
+    },
+    {
+        "name"  : "Poor",
+        "abbv"  : "Pr",
+        "white" : [1, 55],
+        "green" : [56, 85],
+        "yellow": [86, 99],
+        "red"   : 100,
+        "mid"   : 4
+    },
+    {
+        "name"  : "Typical",
+        "abbv"  : "Ty",
+        "white" : [1, 50],
+        "green" : [51, 80],
+        "yellow": [81, 97],
+        "red"   : [98, 100],
+        "mid"   : 6
+    },
+    {
+        "name"  : "Good",
+        "abbv"  : "Gd",
+        "white" : [1, 45],
+        "green" : [46, 75],
+        "yellow": [76, 97],
+        "red"   : [98, 100],
+        "mid"   : 10
+    },
+    {
+        "name"  : "Excellent",
+        "abbv"  : "Ex",
+        "white" : [1, 40],
+        "green" : [41, 70],
+        "yellow": [71, 94],
+        "red"   : [95, 100],
+        "mid"   : 20
+    },
+    {
+        "name"  : "Remarkable",
+        "abbv"  : "Rm",
+        "white" : [1, 35],
+        "green" : [36, 65],
+        "yellow": [66, 94],
+        "red"   : [95, 100],
+        "mid"   : 30
+    },
+    {
+        "name"  : "Incredible",
+        "abbv"  : "In",
+        "white" : [1, 30],
+        "green" : [31, 60],
+        "yellow": [61, 90],
+        "red"   : [91, 100],
+        "mid"   : 40
+    },
+    {
+        "name"  : "Amazing",
+        "abbv"  : "Am",
+        "white" : [1, 25],
+        "green" : [26, 55],
+        "yellow": [56, 90],
+        "red"   : [91, 100],
+        "mid"   : 50
+    },
+    {
+        "name"  : "Monstrous",
+        "abbv"  : "Mn",
+        "white" : [1, 20],
+        "green" : [21, 50],
+        "yellow": [51, 85],
+        "red"   : [86, 100],
+        "mid"   : 75
+    },
+    {
+        "name"  : "Unearthly",
+        "abbv"  : "Un",
+        "white" : [1, 15],
+        "green" : [16, 45],
+        "yellow": [46, 85],
+        "red"   : [86, 100],
+        "mid"   : 100
+    },
+    {
+        "name"  : "Shift X",
+        "abbv"  : "X",
+        "white" : [1, 10],
+        "green" : [11, 40],
+        "yellow": [41, 80],
+        "red"   : [81, 100],
+        "mid"   : 150
+    },
+    {
+        "name"  : "Shift Y",
+        "abbv"  : "Y",
+        "white" : [1, 6],
+        "green" : [7, 40],
+        "yellow": [41, 80],
+        "red"   : [81, 100],
+        "mid"   : 250
+    },
+    {
+        "name"  : "Shift Z",
+        "abbv"  : "Z",
+        "white" : [1, 3],
+        "green" : [4, 35],
+        "yellow": [36, 75],
+        "red"   : [76, 100],
+        "mid"   : 500
+    },
+    {
+        "name"  : "Class 1000",
+        "abbv"  : "c1000",
+        "white" : 1,
+        "green" : [2, 35],
+        "yellow": [36, 75],
+        "red"   : [76, 100],
+        "mid"   : 1000
+    },
+    {
+        "name"  : "Class 3000",
+        "abbv"  : "c3000",
+        "white" : 1,
+        "green" : [2, 30],
+        "yellow": [31, 70],
+        "red"   : [71, 100],
+        "mid"   : 3000
+    },
+    {
+        "name"  : "Class 5000",
+        "abbv"  : "c5000",
+        "white" : 1,
+        "green" : [2, 25],
+        "yellow": [26, 65],
+        "red"   : [66, 100],
+        "mid"   : 5000
+    },
+    {
+        "name"  : "Beyond",
+        "abbv"  : "B",
+        "white" : 1,
+        "green" : [2, 20],
+        "yellow": [21, 60],
+        "red"   : [61, 100],
+        "mid"   : "x"
+    }
+]
