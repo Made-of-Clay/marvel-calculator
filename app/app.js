@@ -1,6 +1,6 @@
 (function () {
     angular
-        .module('marvel', [])
+        .module('marvel', ['lodash'])
     ;
 
 })();
