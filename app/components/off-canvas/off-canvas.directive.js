@@ -19,8 +19,8 @@
         return directive;
 
         function link(scope, elem, atts) {
-            console.log('working on link() - offCanvas in progress');
-            console.log('scope, elem, atts',scope, elem, atts);
+            // console.log('working on link() - offCanvas in progress');
+            // console.log('scope, elem, atts',scope, elem, atts);
             // check for atts to customize template, otherwise let controller set defaults
             if(isString(atts.listClass)) {
                 scope.vm.list.class = atts.listClass;

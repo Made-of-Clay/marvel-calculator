@@ -1,3 +1,6 @@
 (function () {
-    angular.module('marvel', []);
-})(); 
+    angular
+        .module('marvel', [])
+    ;
+
+})();
