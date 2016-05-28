@@ -1,6 +1,7 @@
-<!-- The class and text *should* prbly be added w/ {{}} but I need to use addClass() for now -->
-<ul class="offcanvas-list {{vm.list.class}}">
-    <!-- <li>adam</li> -->
-</ul>
+<div class="offcanvas-wrapper" ng-class="{isShowing:vm.showing}" >
+    <ng-transclude></ng-transclude>
 
-<span class="offcanvas-toggle {{vm.toggle.class}}">{{vm.toggle.text}}</span>
+    <span class="offcanvas-toggle" ng-click="vm.show()">
+        {{vm.toggleText}}
+    </span>
+</div>
