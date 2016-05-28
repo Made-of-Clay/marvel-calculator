@@ -50,7 +50,9 @@
 <br>
 <br>
     <div id="app-wrapper" ng-app="marvel">
-        <nav off-canvas toggle-class="toggle-power-rank" toggle-text="Power Ranks" list-class="list-power-ranks">offcanvas component</nav>
+        <div off-canvas off-canvas-toggle-text="Power Ranks">
+            <mvl-power-ranks></mvl-power-ranks>
+        </div>
 
         <marvel-calc>marvel calculator</marvel-calc>
     </div>
@@ -68,6 +70,9 @@
 
     <script src="app/components/off-canvas/off-canvas.controller.js"></script>
     <script src="app/components/off-canvas/off-canvas.directive.js"></script>
+
+    <script src="app/components/mvl-power-ranks/mvl-power-ranks.controller.js"></script>
+    <script src="app/components/mvl-power-ranks/mvl-power-ranks.directive.js"></script>
 
     <!-- Old Scripts -->
     <script src="assets/js/jquery.1.9.1.min.js"></script>
