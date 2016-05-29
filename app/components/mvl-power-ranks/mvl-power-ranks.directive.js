@@ -4,8 +4,7 @@
         .directive('mvlPowerRanks', mvlPowerRanks)
     ;
 
-    mvlPowerRanks.$inject = ['powerRankService'];
-    function mvlPowerRanks(powerRankService) {
+    function mvlPowerRanks() {
         var path = 'app/components/mvl-power-ranks';
         var directive = {
             templateUrl: path + '/mvl-power-ranks.html',

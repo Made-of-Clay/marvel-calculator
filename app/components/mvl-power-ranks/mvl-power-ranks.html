@@ -1,5 +1,10 @@
 <ul class="power-ranks-list">
-    <li class="power-ranks-item" ng-repeat="item in vm.list.items">
-        {{item}}
+    <li class="power-ranks-item"
+        ng-repeat="item in vm.data"
+        ng-click="vm.changeRank($index)">
+        <span id="{{item.abbv}}">
+            {{item.name}}
+            ({{item.mid}})
+        </span>
     </li>
 </ul>
