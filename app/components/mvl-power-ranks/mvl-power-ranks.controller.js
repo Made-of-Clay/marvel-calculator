@@ -1,7 +1,7 @@
 (function () {
     angular
         .module('marvel')
-        .directive('mvlPowerRankController', mvlPowerRankController)
+        .controller('mvlPowerRankController', mvlPowerRankController)
     ;
 
     mvlPowerRankController.$inject = ['powerRankService'];

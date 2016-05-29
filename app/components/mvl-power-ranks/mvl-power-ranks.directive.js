@@ -10,7 +10,7 @@
         var directive = {
             templateUrl: path + '/mvl-power-ranks.html',
             restrict: 'AE',
-            controller: 'mvlRankController',
+            controller: 'mvlPowerRankController',
             controllerAs: 'vm',
             bindToController: true,
             scope: {}
