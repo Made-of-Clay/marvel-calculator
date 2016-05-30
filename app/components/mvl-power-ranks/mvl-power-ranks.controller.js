@@ -1,11 +1,13 @@
 (function () {
+    'use strict';
+
     angular
         .module('marvel')
-        .controller('mvlPowerRankController', mvlPowerRankController)
+        .controller('MvlPowerRankController', MvlPowerRankController)
     ;
 
-    mvlPowerRankController.$inject = ['powerRankService'];
-    function mvlPowerRankController(powerRankService) {
+    MvlPowerRankController.$inject = ['powerRankService'];
+    function MvlPowerRankController(powerRankService) {
         var vm = this;
 
         // Properties

@@ -1,4 +1,6 @@
 (function () {
+    'use strict';
+
     angular
         .module('marvel')
         .directive('mvlPowerRanks', mvlPowerRanks)
@@ -9,7 +11,7 @@
         var directive = {
             templateUrl: path + '/mvl-power-ranks.html',
             restrict: 'AE',
-            controller: 'mvlPowerRankController',
+            controller: 'MvlPowerRankController',
             controllerAs: 'vm',
             bindToController: true,
             scope: {}
