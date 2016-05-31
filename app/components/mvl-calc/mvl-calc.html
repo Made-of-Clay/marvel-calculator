@@ -8,9 +8,8 @@
     <div id="buttons">
         <btn class="btn"
             ng-repeat="btn in vm.buttons"
-            ng-click="vm.updateVal(btn)">
-            {{vm.checkValue(btn)}}
-        </a>
+            ng-click="vm.updateVal(btn)"
+            ng-bind-html="btn | buttonVal"></btn>
         <!-- <a class="btn num">1</a>
         <a class="btn num">2</a>
         <a class="btn num">3</a>
