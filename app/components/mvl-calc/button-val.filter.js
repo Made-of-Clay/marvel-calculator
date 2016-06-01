@@ -14,15 +14,18 @@
             if(isNaN(value)) {
                 // backspace or clear
                 if(value.toLowerCase() === 'backspace') {
-                    val = $sce.trustAsHtml('&laquo;');
+                    // val = $sce.trustAsHtml('&laquo;');
+                    val = '&laquo;';
                 } else if(value.toLowerCase() === 'clear') {
                     val = 'C';
                 } else console.error('Whaaa?');
+                val = $sce.trustAsHtml(val);
             } else {
                 val = value;
             }
 
             return val;
+            // return $sce.trustAsHtml(val);
         }
     }
 })();
