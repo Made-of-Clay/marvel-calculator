@@ -1,6 +1,9 @@
 (function () {
     angular
-        .module('marvel', ['lodash'])
+        .module('marvel', [
+            'lodash',
+            'ngSanitize'
+        ])
     ;
 
 })();
