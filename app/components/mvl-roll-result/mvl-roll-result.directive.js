@@ -8,7 +8,6 @@
     mvlRollResult.$inject = [];
     /* @ngInject */
     function mvlRollResult() {
-        // var curDir = 'app/components/mvl-calc';
         var curDir = 'app/components/mvl-roll-result';
         var directive = {
             bindToController: true,
