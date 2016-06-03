@@ -13,6 +13,7 @@
         vm.title = 'MvlCalcController';
         vm.buttons = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 'backspace', 0, 'clear' ];
         vm.result = 0; // updates as user enters values
+        vm.rank = {}; // updates when interface says to
 
         vm.checkVal = checkVal;
         vm.updateVal = updateVal;
@@ -20,6 +21,8 @@
         activate();
         ////////////////
         function activate() {
+            // get current rank from interface
+            // set to prop here
             console.log('activated');
         }
         function checkVal(value) {
@@ -33,6 +36,7 @@
             // if number, append number to value
             if(typeof value === 'number') {
                 var newRes = calcNewRes(vm.result, value);
+                // update color based on range (make background directive)
             }
             // if string, enter switch
         }
