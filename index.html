@@ -44,18 +44,10 @@
     </article><!-- End #container -->
 
     <a class="ver1" href="version_1.0.php">Go to v1.0</a>
-<br>
-<br>
-<br>
-<br>
-<br>
-    <div id="app-wrapper" ng-app="marvel">
-        <div off-canvas off-canvas-toggle-text="Power Ranks">
-            <div mvl-power-ranks></div>
-        </div>
 
-        <div mvl-roll-result>marvel calculator</div>
-    </div>
+<br><br><br><br><br>
+
+    <div id="app-wrapper" ng-app="marvel" mvl-main>main</div>
 
     <script src="bower_components/angular/angular.min.js"></script>
     <script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
@@ -63,8 +55,9 @@
 
     <script src="app/app.js"></script>
 
-    <!-- <script src="app/components/master/master.controller.js"></script>
-    <script src="app/components/master/master-data.service.js"></script> -->
+    <script src="app/components/mvl-main/mvl-main.controller.js"></script>
+    <script src="app/components/mvl-main/mvl-main.directive.js"></script>
+    <!-- <script src="app/components/main/master-data.service.js"></script> -->
 
     <script src="app/services/lodash.service.js"></script>
     <script src="app/services/power-rank.service.js"></script>
