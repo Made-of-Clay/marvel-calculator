@@ -1,0 +1,7 @@
+<div id="buttons">
+    <btn class="btn"
+        ng-repeat="btn in vm.buttons"
+        ng-click="vm.updateVal(btn)"
+        ng-bind-html="btn | buttonVal"
+        ></btn>
+</div><!-- End #buttons -->

@@ -3,14 +3,14 @@
 
     angular
         .module('marvel')
-        .controller('MvlCalcController', MvlCalcController);
+        .controller('MvlRollResultController', MvlRollResultController);
 
-    MvlCalcController.$inject = ['$sce'];
+    MvlRollResultController.$inject = ['$sce'];
     /* @ngInject */
-    function MvlCalcController($sce) {
+    function MvlRollResultController($sce) {
         var vm = this;
         
-        vm.title = 'MvlCalcController';
+        vm.title = 'MvlRollResultController';
         vm.buttons = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 'backspace', 0, 'clear' ];
         vm.result = 0; // updates as user enters values
         vm.rank = {}; // updates when interface says to

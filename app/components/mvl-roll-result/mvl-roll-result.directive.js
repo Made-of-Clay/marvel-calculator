@@ -3,20 +3,21 @@
 
     angular
         .module('marvel')
-        .directive('mvlCalc', mvlCalc);
-    
-    mvlCalc.$inject = [];
+        .directive('mvlRollResult', mvlRollResult);
+
+    mvlRollResult.$inject = [];
     /* @ngInject */
-    function mvlCalc() {
-        var curDir = 'app/components/mvl-calc';
+    function mvlRollResult() {
+        // var curDir = 'app/components/mvl-calc';
+        var curDir = 'app/components/mvl-roll-result';
         var directive = {
             bindToController: true,
-            controller: 'MvlCalcController',
+            controller: 'MvlRollResultController',
             controllerAs: 'vm',
             link: link,
             restrict: 'AE',
             scope: {},
-            templateUrl: curDir + '/mvl-calc.html'
+            templateUrl: curDir + '/mvl-roll-result.html'
         };
 
         return directive;
