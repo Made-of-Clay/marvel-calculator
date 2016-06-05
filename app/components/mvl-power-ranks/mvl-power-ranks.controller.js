@@ -6,8 +6,8 @@
         .controller('MvlPowerRankController', MvlPowerRankController)
     ;
 
-    MvlPowerRankController.$inject = ['powerRankService'];
-    function MvlPowerRankController(powerRankService) {
+    MvlPowerRankController.$inject = ['powerRankService', '$rootScope'];
+    function MvlPowerRankController(powerRankService, $rootScope) {
         var vm = this;
 
         // Properties
@@ -19,8 +19,8 @@
 
         activate();
 
-        function activate() {
-            return powerRankService
+        function activate() {            
+            powerRankService
                 .getData()
                 .then(storeFetchedData)
                 .then(setFirstCurrent)
@@ -36,6 +36,7 @@
         function changeRank(index) {
             if(_.isNull(vm.current) || !_.isEqual(vm.data[index], vm.current)) {
                 vm.current = vm.data[index];
+                $rootScope.$broadcast('change.rank', vm.current);
             }
         }
     }

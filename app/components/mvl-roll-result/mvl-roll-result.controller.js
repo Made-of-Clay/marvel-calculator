@@ -5,9 +5,9 @@
         .module('marvel')
         .controller('MvlRollResultController', MvlRollResultController);
 
-    MvlRollResultController.$inject = ['$sce', '_'];
+    MvlRollResultController.$inject = ['$sce', '_', '$rootScope'];
     /* @ngInject */
-    function MvlRollResultController($sce, _) {
+    function MvlRollResultController($sce, _, $rootScope) {
         var vm = this;
         
         // Properties
@@ -36,6 +36,8 @@
                         break;
                 }
             }
+            // change.result broadcasts vm.result
+            $rootScope.$broadcast('change.result', vm.result);
             // if string, enter switch
         }
         function calcNewRes(oldRes, newRes) {
