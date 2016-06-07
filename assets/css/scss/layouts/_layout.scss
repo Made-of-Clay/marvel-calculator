@@ -33,11 +33,10 @@
     // z-index: 10;
 }
 
-*:not(.background) {
-    z-index: 1;
-}
-// hack
-#app-wrapper{
+// *:not(.background) {
+//     z-index: 1;
+// }
+.l-container {
     position: relative;
     z-index: 10;
 }
