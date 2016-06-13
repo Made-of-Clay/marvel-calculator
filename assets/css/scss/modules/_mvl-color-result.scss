@@ -1,5 +1,6 @@
 @mixin radialGrad($color) {
-    background-image: radial-gradient(ellipse at center, $color, darken($color, 20%));
+    // background-image: radial-gradient(ellipse at center, $color, darken($color, 20%));
+    @include radial-gradient($color, darken($color, 20%));
 }
 %full_opacity {
     opacity: 1;
