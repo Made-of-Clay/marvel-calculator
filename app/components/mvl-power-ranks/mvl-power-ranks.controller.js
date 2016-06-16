@@ -42,7 +42,6 @@
             }
         }
         function show(showIt) {
-console.log('testing');
             if(!_.isUndefined(showIt)){
                 vm.showing = showIt;
             }
