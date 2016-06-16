@@ -30,7 +30,7 @@
     text-align: center;
     text-decoration: none;
     width: 6em;
-    // z-index: 10;
+    z-index: 1;
 }
 
 // *:not(.background) {
@@ -38,5 +38,5 @@
 // }
 .l-container {
     position: relative;
-    z-index: 10;
+    z-index: 1;
 }

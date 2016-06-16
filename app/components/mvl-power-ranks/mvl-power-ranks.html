@@ -1,10 +1,14 @@
-<ul class="power-ranks-list">
-    <li class="power-ranks-item"
-        ng-repeat="item in vm.data"
-        ng-click="vm.changeRank($index)">
-        <span id="{{item.abbv}}">
-            {{item.name}}
-            ({{item.mid}})
-        </span>
-    </li>
-</ul>
+<div class="power-ranks-wrapper" ng-class="{'is-showing':vm.showing}">
+    <ul class="power-ranks-list">
+        <li class="power-ranks-item"
+            ng-repeat="item in vm.data"
+            ng-click="vm.changeRank($index)">
+            <span id="{{item.abbv}}">
+                {{item.name}}
+                ({{item.mid}})
+            </span>
+        </li>
+    </ul>
+
+    <span class="power-ranks-toggle" ng-click="vm.show()">Power Ranks</span>
+</div>

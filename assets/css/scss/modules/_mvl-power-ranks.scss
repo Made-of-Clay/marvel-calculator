@@ -1,20 +1,27 @@
 .power-ranks {
+    &-wrapper {
+        left: -180px;
+        position: absolute;
+        @include transform(translate(0));
+        transition: transform 0.3s;
+        top: 0;
+
+        @include bp(850px) {
+            @include transform(translate(180px));
+        }
+        &.is-showing {
+            @include transform(translate(180px));
+        }
+    }
     &-list {
-        background: rgba(white, 0.5);
+        $width: 180px;
+        background: rgba(#ECECEC, 0.8);
+        box-shadow: 0 0 10px rgba(black, 0.25);
         font-size: 1.1em;
         list-style: none;
-        left: -180px;
-        // left: 0;
         margin: 0;
         padding: 0;
-        position: absolute;
-        top: 0;
-        transition: left 0.3s;
-        width: 180px;
-
-        // @include bp(850px) {
-        //     left: 0;
-        // }
+        width: $width;
     }
     &-item {
         border: 1px solid;
@@ -24,7 +31,20 @@
         transition: background-color 0.5s;
 
         &:hover {
-            background-color: rgba(white, 0.5);
+            background-color: white;
         }
+    }
+    &-toggle {
+        background-color: white;
+        border-radius: 0.25em 0.25em 0 0;
+        box-shadow: 0 -2px 5px rgba(black, 0.25);
+        cursor: pointer;
+        font-size: 1.2em;
+        left: 70%;
+        padding: 0.5em 1em;
+        position: absolute;
+        @include transform(rotate(90deg));
+        top: 25%;
+        white-space: nowrap;
     }
 }

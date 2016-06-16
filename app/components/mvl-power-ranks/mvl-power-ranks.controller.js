@@ -6,16 +6,18 @@
         .controller('MvlPowerRankController', MvlPowerRankController)
     ;
 
-    MvlPowerRankController.$inject = ['powerRankService', '$rootScope'];
-    function MvlPowerRankController(powerRankService, $rootScope) {
+    MvlPowerRankController.$inject = ['powerRankService', '$rootScope', '_'];
+    function MvlPowerRankController(powerRankService, $rootScope, _) {
         var vm = this;
 
         // Properties
         vm.data = [];
         vm.current = null;
+        vm.showing = false;
 
         // Methods
         vm.changeRank = changeRank;
+        vm.show = show;
 
         activate();
 
@@ -38,6 +40,13 @@
                 vm.current = vm.data[index];
                 $rootScope.$broadcast('change.rank', vm.current);
             }
+        }
+        function show(showIt) {
+console.log('testing');
+            if(!_.isUndefined(showIt)){
+                vm.showing = showIt;
+            }
+            vm.showing = !vm.showing;
         }
     }
 })(); 
