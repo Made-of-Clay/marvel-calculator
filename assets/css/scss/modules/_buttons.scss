@@ -1,0 +1,23 @@
+#buttons {
+    line-height: 1;
+    text-align: center;
+}
+.btn {
+    background-color: rgba(white,0.25);
+    border: 1px solid rgba(white,0.75);
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    height: 1em;
+    margin: 0 0.25em 0.5em;
+    padding: 10px;
+    transition: background-color $transition-short;
+    width: 1em;
+
+    &:hover {
+        background-color: rgba(white,0.75);
+    }
+    &::selection {
+        background: none;
+    }
+}
