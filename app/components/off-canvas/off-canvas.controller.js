@@ -11,7 +11,7 @@
         var vm = this;
 
         // Properties
-        vm.showing = true;
+        vm.showing = false;
         vm.toggleText = 'Toggle';
 
         // Methods

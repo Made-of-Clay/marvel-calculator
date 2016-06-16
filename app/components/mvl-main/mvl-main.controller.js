@@ -37,16 +37,28 @@
         }
         function updateColor() {
             if(_.isNull(vm.rank)) { console.error('noop'); return; }
-            var colorMatch;
+            var colorMatch = 'white';
             var ignore = false;
             _.forEach(['white','green','yellow','red'], function checkEachColor(color) {
                 if(ignore) return;
-                var min = vm.rank[color][0];
-                var max = vm.rank[color][0];
-                if(_.inRange(vm.result, min, max+1)) { // max should be inclusive
-                    colorMatch = color;
-                    ignore = true; // skips logic for future iterations
+
+                if(_.isArray(vm.rank[color])) {
+                    var min = vm.rank[color][0];
+                    var max = vm.rank[color][1];
+
+                    if(_.inRange(vm.result, min, max+1)) { // max should be inclusive
+                        colorMatch = color;
+                        ignore = true; // skips logic for future iterations
+                    }
+                } else {
+                    var rank = vm.rank[color];
+
+                    if(rank === vm.result) {
+                        colorMatch = color;
+                        ignore = true;
+                    }
                 }
+
             });
             $rootScope.$broadcast('change.color', colorMatch);
         }

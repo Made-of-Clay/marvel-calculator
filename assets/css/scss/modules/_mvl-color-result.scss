@@ -1,3 +1,4 @@
+/*! ___START___ */
 @mixin radialGrad($color) {
     // background-image: radial-gradient(ellipse at center, $color, darken($color, 20%));
     @include radial-gradient($color, darken($color, 20%));
@@ -15,24 +16,21 @@
 .background {
     height: 100%;
     left: 0;
+    opacity: 0;
     position: absolute;
+    top: 0;
     transition: opacity 1s;
     width: 100%;
 
-    &:not(.bg_wht) {
-        opacity: 0;
-        // right: 0;
-    }
     &.bg_wht {
+        opacity: 1;
         position: relative;
 
         @include radialGrad(#dfdfdf);
     }
-    // &.green .bg_grn  { @extend %full_opacity; }
-    // &.yellow .bg_ylw { @extend %full_opacity; }
-    // &.red .bg_red    { @extend %full_opacity; }
     &.is-showing { opacity: 1; }
 }
 .bg_grn { @include radialGrad(#57f557); }
 .bg_ylw { @include radialGrad(#D5D54D); }
 .bg_red { @include radialGrad(#ff4646); }
+/*! ___END___ */
