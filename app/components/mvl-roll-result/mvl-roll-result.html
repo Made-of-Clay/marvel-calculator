@@ -1,6 +1,8 @@
-<output id="roll-result" class="pr_abbv">{{vm.result}}</output>
+<output id="roll-result-misc" class="result-output">{{vm.resultMisc}}</output>
 
-<div id="buttons">
+<output id="roll-result" class="result-output">{{vm.result}}</output><!-- pr_abbv -->
+
+<div id="buttons" class="button-wrapper">
     <btn class="btn"
         ng-repeat="btn in vm.buttons"
         ng-click="vm.updateVal(btn)"

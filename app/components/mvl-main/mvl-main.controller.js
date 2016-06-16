@@ -33,7 +33,7 @@
         }
         function displayNewRank(rank) {
             var newDisp = rank.abbv + ' (' + rank.mid + ')';
-            $rootScope.$broadcast('change.display', newDisp);
+            $rootScope.$broadcast('change.misc', newDisp);
         }
         function updateColor() {
             if(_.isNull(vm.rank)) { console.error('noop'); return; }

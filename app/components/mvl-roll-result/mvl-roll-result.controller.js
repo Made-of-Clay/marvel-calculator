@@ -21,6 +21,10 @@
         activate();
         ////////////////
         function activate() {
+            $rootScope.$on('change.misc', changeMisc);
+        }
+        function changeMisc(event, miscData) {
+            vm.resultMisc = miscData;
         }
         function updateVal(value) {
             if(_.isNumber(value)) {
