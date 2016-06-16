@@ -1,0 +1,30 @@
+.power-ranks {
+    &-list {
+        background: rgba(white, 0.5);
+        font-size: 1.1em;
+        list-style: none;
+        left: -180px;
+        // left: 0;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 0;
+        transition: left 0.3s;
+        width: 180px;
+
+        // @include bp(850px) {
+        //     left: 0;
+        // }
+    }
+    &-item {
+        border: 1px solid;
+        border-color: #eee transparent #aaa;
+        cursor: pointer;
+        padding: 0.25em 1em;
+        transition: background-color 0.5s;
+
+        &:hover {
+            background-color: rgba(white, 0.5);
+        }
+    }
+}

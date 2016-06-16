@@ -11,6 +11,7 @@
 // @import 'color';
 @import 'bourbon/bourbon';
 @import 'config';
+@import 'utils';
 /* Typography */
 @import 'typography/typography';
 
@@ -19,6 +20,8 @@
  ************************************************************/
 /* Base Elements */
 @import 'base';
+
+@import 'elements';
 
 /* Buttons */
 @import 'buttons/buttons';
